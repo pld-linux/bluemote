@@ -49,4 +49,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHOR README config.txt
 %attr(755,root,root) %{_bindir}/bluemoteapp
 %attr(755,root,root) %{_bindir}/bluemote
+%dir %{_datadir}/%{name}
 %{_datadir}/%{name}/bluemote.cfg
