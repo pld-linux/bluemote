@@ -36,8 +36,8 @@ install bluemote-example.cfg $RPM_BUILD_ROOT%{_datadir}/%{name}/bluemote.cfg
 
 cat > $RPM_BUILD_ROOT%{_bindir}/bluemote <<EOF
 #!/bin/sh
-[ -e ~/.bluemote.cfg ] ||
-    /bin/cp -a %{_datadir}/%{name}/bluemote.cfg ~/.bluemote.cfg
+[ -e ~/.bluemote.cfg ] || \
+	/bin/cp -a %{_datadir}/%{name}/bluemote.cfg ~/.bluemote.cfg
 
 exec %{_bindir}/bluemoteapp
 
