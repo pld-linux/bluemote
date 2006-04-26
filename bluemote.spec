@@ -1,6 +1,5 @@
-
-Summary:	Bluemote - a remote controller for your PC via bluetooth
-Summary(pl):	Bluemote - pilot dla komputera via bluetooth
+Summary:	Bluemote - a remote controller for your PC via Bluetooth
+Summary(pl):	Bluemote - pilot dla komputera przez Bluetooth
 Name:		bluemote
 Version:	2.0
 Release:	1
@@ -9,6 +8,8 @@ Group:		Applications
 Source0:	http://www.geocities.com/saravkrish/progs/bluemote/%{name}.%{version}.tar.gz
 # Source0-md5:	69ab4eafb839a3f22fca2832fbba60f6
 URL:		http://www.geocities.com/saravkrish/progs/bluemote/
+BuildRequires:	xorg-lib-libX11-devel
+BuildRequires:	xorg-lib-libXtst-devel
 Requires:	bluez-utils
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -26,7 +27,8 @@ Bluemote to program, który zamieni wyposa¿ony w Bluetooth telefon T610
 %build
 %{__make} \
 	CC="%{__cc}" \
-	CFLAGS="%{rpmcflags}"
+	CFLAGS="%{rpmcflags}" \
+	X11FLAGS="-lX11 -lXtst"
 
 %install
 rm -rf $RPM_BUILD_ROOT
