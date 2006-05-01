@@ -1,4 +1,5 @@
 Summary:	Bluemote - a remote controller for your PC via Bluetooth
+Summary(de):	Bluemote - Bluetooth Fernbedienung für den PC
 Summary(pl):	Bluemote - pilot dla komputera przez Bluetooth
 Name:		bluemote
 Version:	2.0
@@ -16,6 +17,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Bluemote is a program meant to extend your Bluetooth enabled T610 (and
 most other Sony Ericsson) as a remote for your PC.
+
+%description -l de
+Bluemote ist ein Programm, dass dein T610 Bluetooth Handy (und andere
+Sony Ericsson Modelle) in eine Komputerfernbedienung verwandelt.
 
 %description -l pl
 Bluemote to program, który zamieni wyposa¿ony w Bluetooth telefon T610
