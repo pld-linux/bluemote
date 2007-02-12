@@ -1,6 +1,6 @@
 Summary:	Bluemote - a remote controller for your PC via Bluetooth
-Summary(de.UTF-8):   Bluemote - Bluetooth Fernbedienung für den PC
-Summary(pl.UTF-8):   Bluemote - pilot dla komputera przez Bluetooth
+Summary(de.UTF-8):	Bluemote - Bluetooth Fernbedienung für den PC
+Summary(pl.UTF-8):	Bluemote - pilot dla komputera przez Bluetooth
 Name:		bluemote
 Version:	2.0
 Release:	1
